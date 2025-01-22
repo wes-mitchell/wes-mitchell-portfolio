@@ -8,9 +8,22 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [showHeaderBG, setShowHeaderBG] = useState(false);
+
   const handleHamburgerClick = () => setHamburgerOpen(!hamburgerOpen);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 100) {
+      setShowHeaderBG(true);
+    } else {
+      setShowHeaderBG(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
   return (
-    <div className="header">
+    <div className={showHeaderBG ? 'header header-bg' : 'header'}>
       <Link to="/">
         <h1>Portfolio</h1>
       </Link>
