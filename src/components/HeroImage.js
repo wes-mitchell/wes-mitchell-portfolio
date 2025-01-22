@@ -12,12 +12,12 @@ const HeroImage = () => {
         <img
           className="intro-image"
           src={IntroImage}
-          alt="user sitting at kitchen table using a computer"
+          alt="middle aged man sitting at kitchen table using a computer"
         />
       </div>
       <div className="content">
-        <p>Hello, I'M A FULL STACK</p>
-        <h1>React Developer</h1>
+        <p>Hello, I'm Wesley Mitchell</p>
+        <h1>Full Stack Developer</h1>
         <div>
           <Link to="/projects" className="btn">
             Projects
@@ -27,7 +27,6 @@ const HeroImage = () => {
           </Link>
         </div>
       </div>
-      HeroImage
     </div>
   );
 };
