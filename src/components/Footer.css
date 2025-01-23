@@ -52,6 +52,11 @@ span {
   cursor: pointer;
 }
 
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 640px) {
   .footer-container {
     flex-direction: column;
