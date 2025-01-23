@@ -1,3 +1,4 @@
+import PricingCard from 'components/PricingCard';
 import Footer from '../components/Footer';
 import HeroImageTwo from '../components/HeroImageTwo';
 import Navbar from '../components/Navbar';
@@ -8,6 +9,7 @@ const Projects = () => {
     <div>
       <Navbar />
       <HeroImageTwo header="Projects" description="Projects Description" />
+      <PricingCard />
       <Footer />
     </div>
   );
