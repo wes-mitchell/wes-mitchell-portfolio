@@ -1,3 +1,4 @@
+import AboutContent from 'components/AboutContent';
 import Footer from 'components/Footer';
 import HeroImageTwo from 'components/HeroImageTwo';
 import Navbar from 'components/Navbar';
@@ -8,6 +9,7 @@ const About = () => {
     <div>
       <Navbar />
       <HeroImageTwo header="About" description="About Description" />
+      <AboutContent />
       <Footer />
     </div>
   );

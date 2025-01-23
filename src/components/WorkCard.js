@@ -1,6 +1,5 @@
 import React from 'react';
 import './WorkCard.css';
-import ProjectOne from '../assets/project1.png';
 import { NavLink } from 'react-router-dom';
 
 const WorkCard = ({ imageSource, title, details, viewUrl, sourceUrl }) => {
