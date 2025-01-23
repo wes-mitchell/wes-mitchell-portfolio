@@ -1,6 +1,6 @@
 import './Footer.css';
 import React from 'react';
-import { FaEnvelope, FaGithub, FaHome, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import WebLinks from '../data/WebLinks';
 
 const Footer = () => {
