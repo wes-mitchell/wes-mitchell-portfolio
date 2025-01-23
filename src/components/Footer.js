@@ -1,41 +1,39 @@
 import './Footer.css';
 import React from 'react';
 import { FaEnvelope, FaGithub, FaHome, FaLinkedin } from 'react-icons/fa';
+import WebLinks from '../data/WebLinks';
 
 const Footer = () => {
+  const handleRedirect = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="footer">
       <div className="footer-container">
-        <div className="footer-left">
-          <div className="location">
-            <FaHome size={20} style={{ color: '#fff', marginRight: '2rem' }} />
-            <div>
-              <p>New Orleans, LA</p>
-            </div>
-          </div>
-          <div className="email">
-            <h4>
-              <FaEnvelope
-                size={20}
-                style={{ color: '#fff', marginRight: '2rem' }}
-              />
-              wesley.a.mitchell87@gmail.com
-            </h4>
-          </div>
-        </div>
-        <div className="footer-right">
-          <h4>About Me</h4>
-          <p>My name is Wesley Mitchell</p>
-          <div className="social">
-            <FaGithub
-              size={30}
-              style={{ color: '#fff', marginRight: '1rem' }}
-            />
-            <FaLinkedin
-              size={30}
-              style={{ color: '#fff', marginRight: '1rem' }}
-            />
-          </div>
+        <span className="footer-item email">
+          <a href="mailto:wesley.a.mitchell87@gmail.com" className="email-link">
+            <FaEnvelope className="footer-icon footer-icon-email" size={20} />
+            <span className="footer-text">wesley.a.mitchell87@gmail.com</span>
+          </a>
+        </span>
+        <div className="social-icons">
+          <span
+            role="link"
+            tabIndex={0}
+            className="footer-item social"
+            onClick={() => handleRedirect(WebLinks.githubProfile)}
+          >
+            <FaGithub className="footer-icon" size={30} />
+          </span>
+          <span
+            role="link"
+            tabIndex={0}
+            className="footer-item social"
+            onClick={() => handleRedirect(WebLinks.linkedInProfile)}
+          >
+            <FaLinkedin className="footer-icon" size={30} />
+          </span>
         </div>
       </div>
     </div>
