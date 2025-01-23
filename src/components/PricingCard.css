@@ -46,14 +46,35 @@
   padding: 1rem 0;
 }
 
-.btn {
+.card .btn {
   display: block;
   width: 80%;
   margin: 2rem auto;
 }
 
+.project-title {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.project-details p {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.project-btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.project-btns .btn {
+  padding: 0.5rem 1rem;
+}
+
 @media screen and (max-width: 740px) {
-  .card-container {
+  .project-container {
     max-width: 90%;
     margin: auto;
     grid-template-columns: 1fr;
