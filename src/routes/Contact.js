@@ -3,12 +3,16 @@ import Footer from 'components/Footer';
 import Form from 'components/Form';
 import HeroImageTwo from 'components/HeroImageTwo';
 import Navbar from 'components/Navbar';
+import PageData from '../data/PageData';
 
 const Contact = () => {
   return (
     <div>
       <Navbar />
-      <HeroImageTwo header="Contact" description="Contact Description" />
+      <HeroImageTwo
+        header={PageData.Contact.header}
+        description={PageData.Contact.description}
+      />
       <Form />
       <Footer />
     </div>

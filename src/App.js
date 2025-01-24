@@ -7,6 +7,7 @@ import Home from './routes/Home';
 import Projects from './routes/Projects';
 
 import { Route, Routes } from 'react-router-dom';
+import Skills from 'routes/Skills';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </>
   );

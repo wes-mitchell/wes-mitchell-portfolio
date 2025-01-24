@@ -35,6 +35,7 @@
 .hero-image p {
   font-size: 1.4rem;
   text-align: center;
+  max-width: 40%;
 }
 
 @media screen and (max-width: 640px) {
