@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/wes-mitchell-portfolio/static/css/main.b3588288.css",
+    "main.js": "/wes-mitchell-portfolio/static/js/main.416eeea5.js",
+    "static/media/miller-time-preview-image.png": "/wes-mitchell-portfolio/static/media/miller-time-preview-image.17b085859b255c0693d5.png",
+    "static/media/portfolio-image.png": "/wes-mitchell-portfolio/static/media/portfolio-image.3bf4affab80e2c37e0f8.png",
+    "static/media/live-drumming.png": "/wes-mitchell-portfolio/static/media/live-drumming.d2d4e296c71c8c351eca.png",
+    "static/media/drum-deals-preview.png": "/wes-mitchell-portfolio/static/media/drum-deals-preview.2478732e558c5eaa3079.png",
+    "static/media/intro-bg.jpg": "/wes-mitchell-portfolio/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
+    "index.html": "/wes-mitchell-portfolio/index.html",
+    "main.b3588288.css.map": "/wes-mitchell-portfolio/static/css/main.b3588288.css.map",
+    "main.416eeea5.js.map": "/wes-mitchell-portfolio/static/js/main.416eeea5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3588288.css",
+    "static/js/main.416eeea5.js"
+  ]
+}
