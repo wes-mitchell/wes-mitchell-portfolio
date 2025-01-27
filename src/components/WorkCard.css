@@ -24,11 +24,19 @@
 
 .project-card img {
   width: 100%;
+  min-height: 170px;
+}
+
+.project-btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .show-more {
   color: #007bff;
-  font-size: 1.2.rem;
+  font-size: 1.2rem;
   cursor: pointer;
   display: inline-block;
   text-decoration: underline;
