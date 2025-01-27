@@ -6,7 +6,7 @@ const TechnicalSkillData = {
       'React',
       'React Query',
       'jQuery',
-      'JaveScript',
+      'JavaScript',
       'TypeScript',
       'Jest Unit Testing',
       'Prettier',

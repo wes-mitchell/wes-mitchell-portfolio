@@ -11,7 +11,7 @@ const ProjectCardData = [
       The site is hosted on GitHub, with continuous integration and deployment (CI/CD) set up via GitHub Actions, 
       ensuring that updates are automatically deployed to the live production environment.`,
     imageSource: PortfolioImg,
-    viewUrl: 'www.wmdrums.com',
+    viewUrl: 'https://wes-mitchell.github.io/wes-mitchell-portfolio',
     sourceUrl: 'https://github.com/wes-mitchell/wes-mitchell-portfolio',
   },
   {
