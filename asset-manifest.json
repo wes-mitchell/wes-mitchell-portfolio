@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wes-mitchell-portfolio/static/css/main.2f52922f.css",
+    "main.css": "/wes-mitchell-portfolio/static/css/main.0c75918a.css",
     "main.js": "/wes-mitchell-portfolio/static/js/main.03e30f34.js",
     "static/media/miller-time-preview-image.png": "/wes-mitchell-portfolio/static/media/miller-time-preview-image.17b085859b255c0693d5.png",
     "static/media/portfolio-image.png": "/wes-mitchell-portfolio/static/media/portfolio-image.3bf4affab80e2c37e0f8.png",
@@ -9,11 +9,11 @@
     "static/media/react1.jpg": "/wes-mitchell-portfolio/static/media/react1.d63ca3791694cd8f6f49.jpg",
     "static/media/react2.webp": "/wes-mitchell-portfolio/static/media/react2.8aa659a4278a7132e6f4.webp",
     "index.html": "/wes-mitchell-portfolio/index.html",
-    "main.2f52922f.css.map": "/wes-mitchell-portfolio/static/css/main.2f52922f.css.map",
+    "main.0c75918a.css.map": "/wes-mitchell-portfolio/static/css/main.0c75918a.css.map",
     "main.03e30f34.js.map": "/wes-mitchell-portfolio/static/js/main.03e30f34.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f52922f.css",
+    "static/css/main.0c75918a.css",
     "static/js/main.03e30f34.js"
   ]
 }
