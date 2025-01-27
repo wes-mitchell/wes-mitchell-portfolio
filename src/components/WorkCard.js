@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './WorkCard.css';
-import { NavLink } from 'react-router-dom';
 
 const WorkCard = ({ project }) => {
   const { imageSource, title, details, viewUrl, sourceUrl } = project;
@@ -33,7 +32,7 @@ const WorkCard = ({ project }) => {
         </span>
         <div className="project-btns">
           {renderLink(viewUrl, 'View')}
-          {renderLink(viewUrl, 'Source')}
+          {renderLink(sourceUrl, 'Source')}
         </div>
       </div>
     </div>
