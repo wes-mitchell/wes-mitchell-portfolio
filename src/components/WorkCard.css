@@ -1,3 +1,7 @@
+.work-container {
+  margin: 1.3rem;
+}
+
 .project-heading {
   text-align: center;
   padding: 4rem 0 2rem 0;
@@ -15,10 +19,26 @@
 .project-card {
   background: #1a1919;
   padding: 1.2rem 1rem;
+  text-align: center;
 }
 
 .project-card img {
   width: 100%;
+}
+
+.show-more {
+  color: #007bff;
+  font-size: 1.2.rem;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+  text-align: right;
+  line-height: 2;
+  width: 100%;
+}
+
+.show-more:hover {
+  color: #0056b3;
 }
 
 @media screen and (max-width: 740px) {
