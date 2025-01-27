@@ -1,6 +1,7 @@
 import PortfolioImg from '../assets/portfolio-image.png';
 import MillerTimeImg from '../assets/miller-time-preview-image.png';
 import DrumDealsImg from '../assets/drum-deals-preview.png';
+import WebLinks from 'data/WebLinks';
 
 const ProjectCardData = [
   {
@@ -11,8 +12,8 @@ const ProjectCardData = [
       The site is hosted on GitHub, with continuous integration and deployment (CI/CD) set up via GitHub Actions, 
       ensuring that updates are automatically deployed to the live production environment.`,
     imageSource: PortfolioImg,
-    viewUrl: 'https://wes-mitchell.github.io/wes-mitchell-portfolio',
-    sourceUrl: 'https://github.com/wes-mitchell/wes-mitchell-portfolio',
+    viewUrl: WebLinks.deployedPortfolio,
+    sourceUrl: WebLinks.portfolioSourceUrl,
   },
   {
     id: 2,
@@ -25,8 +26,9 @@ const ProjectCardData = [
       Additionally, a seeding process was implemented to populate the database by reading data from a CSV file, ensuring the environment was adequately populated for testing.
       Future updates will focus on enhancing the front-end to support additional API endpoints and further improve functionality.`,
     imageSource: MillerTimeImg,
-    viewUrl: 'www.google.com',
-    sourceUrl: 'www.yahoo.com',
+    viewUrl: WebLinks.deployedMillerTime,
+    sourceUrlFE: WebLinks.millerTimeSourceFE,
+    sourceUrlBE: WebLinks.millerTimeSourceBE,
   },
   {
     id: 3,
@@ -38,7 +40,7 @@ const ProjectCardData = [
       The app follows best practices in software design, employing object-oriented principles and the single responsibility principle for maintainable 
       and scalable code. This project serves as a dedicated marketplace for drum enthusiasts, streamlining their buying and selling process.`,
     imageSource: DrumDealsImg,
-    viewUrl: 'www.youtube.com',
+    viewUrl: '',
     sourceUrl: 'https://github.com/wes-mitchell/drums-deals',
   },
 ];

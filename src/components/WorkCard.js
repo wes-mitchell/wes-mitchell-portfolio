@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import './WorkCard.css';
 
 const WorkCard = ({ project }) => {
-  const { imageSource, title, details, viewUrl, sourceUrl } = project;
+  const {
+    imageSource,
+    title,
+    details,
+    viewUrl,
+    sourceUrl,
+    sourceUrlFE,
+    sourceUrlBE,
+  } = project;
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const truncatedDetails = isExpanded
@@ -31,8 +40,10 @@ const WorkCard = ({ project }) => {
           {isExpanded ? 'Show Less' : 'Show More'}
         </span>
         <div className="project-btns">
-          {renderLink(viewUrl, 'View')}
-          {renderLink(sourceUrl, 'Source')}
+          {viewUrl && renderLink(viewUrl, 'View')}
+          {sourceUrl && sourceUrl !== '' && renderLink(sourceUrl, 'Source')}
+          {sourceUrlFE && renderLink(sourceUrlFE, 'UI Source')}
+          {sourceUrlBE && renderLink(sourceUrlBE, 'BE Source')}
         </div>
       </div>
     </div>
