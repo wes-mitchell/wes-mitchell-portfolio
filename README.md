@@ -6,9 +6,7 @@ Welcome to my portfolio! This project showcases my journey as a software develop
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Setup and Installation](#setup-and-installation)
-- [Contact Form](#contact-form)
-- [License](#license)
+- [Hosting & Deployment](#hosting-and-deployment)
 
 ## Project Overview
 
@@ -27,6 +25,7 @@ This portfolio project was built with the following technologies:
 - **HTML**: For the basic structure of the web pages.
 - **CSS (vanilla CSS)**: For styling the components, with custom responsiveness for various screen sizes.
 - **JavaScript**: For handling form submissions and other dynamic behavior.
+- **GitHub Actions**: For automating the CI/CD workflow, ensuring continuous integration and seamless deployment with each update to the repository.
 
 ## Features
 
