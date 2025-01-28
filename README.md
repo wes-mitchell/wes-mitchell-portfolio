@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Wesley Mitchell's Full Stack Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This project showcases my journey as a software developer, including details about my skills, personal projects, and a way to contact me directly through a form. This portfolio is built using modern web technologies and designed to be fully responsive.
 
-## Available Scripts
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [Contact Form](#contact-form)
+- [License](#license)
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This portfolio project is a personal website that showcases my skills, projects, and a brief overview of my career journey. I built this site to provide an interactive and responsive experience for visitors, allowing them to learn more about me as a developer and connect via the contact form.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The portfolio features sections that highlight my projects, skills, and a downloadable resume.
+- It includes a contact form powered by **EmailJS** to send messages directly to my inbox.
+- The design is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+This portfolio project was built with the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js**: For creating interactive, dynamic and reusable front-end components.
+- **EmailJS**: For integrating the contact form with an email service, enabling visitors to reach out.
+- **HTML**: For the basic structure of the web pages.
+- **CSS (vanilla CSS)**: For styling the components, with custom responsiveness for various screen sizes.
+- **JavaScript**: For handling form submissions and other dynamic behavior.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive Design**: The website adapts to different screen sizes, ensuring a good user experience on mobile, tablet, and desktop devices.
+- **Project Showcases**: Highlights personal projects and professional skills, with detailed descriptions and images.
+- **Contact Form**: A fully functional contact form that allows visitors to send messages directly to my inbox using **EmailJS**.
+- **Downloadable Resume**: Option to download my resume in both **PDF** and **DOCX** formats.
+- **Smooth Animations**: The site includes subtle animations to enhance user interaction.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Hosting and Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This portfolio is hosted and deployed using **GitHub Actions**. Every push to the main branch automatically triggers a deployment, making sure the live version of the portfolio is always up to date.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can view the live portfolio at:  
+[https://wes-mitchell.github.io/wes-mitchell-portfolio](https://wes-mitchell.github.io/wes-mitchell-portfolio)
