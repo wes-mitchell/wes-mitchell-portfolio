@@ -1,0 +1,35 @@
+.resume-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.resume-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.resume-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1140px;
+  margin-bottom: 0.5rem;
+}
+
+.page img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.formswift-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .resume-pages {
+    grid-template-columns: 1fr;
+  }
+}

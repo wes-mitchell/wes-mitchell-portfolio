@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WorkCard.css';
+import ExternalLinkButton from './ExternalLinkButton';
 
 const WorkCard = ({ project }) => {
   const {
@@ -23,11 +24,7 @@ const WorkCard = ({ project }) => {
   };
 
   const renderLink = (url, buttonText) => {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer" className="btn">
-        {buttonText}
-      </a>
-    );
+    return <ExternalLinkButton url={url} buttonText={buttonText} />;
   };
 
   return (

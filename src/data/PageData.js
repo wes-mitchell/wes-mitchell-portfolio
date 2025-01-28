@@ -1,7 +1,7 @@
 const PageData = {
   About: {
-    header: 'My Story',
-    description: 'About Info Here',
+    header: 'About Me',
+    description: 'From Musician To Software Developer',
   },
   Contact: {
     header: 'Contact',
@@ -14,6 +14,11 @@ const PageData = {
   Skills: {
     header: 'Skills',
     description: 'Here is a bullet point list of all my technical skills.',
+  },
+  Resume: {
+    header: 'My Resume',
+    description:
+      'You can view my resume here, or download it for your reference.',
   },
 };
 
