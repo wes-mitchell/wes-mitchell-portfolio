@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wes-mitchell-portfolio/static/css/main.8b4db21b.css",
-    "main.js": "/wes-mitchell-portfolio/static/js/main.dbb563db.js",
+    "main.css": "/wes-mitchell-portfolio/static/css/main.2911f8e0.css",
+    "main.js": "/wes-mitchell-portfolio/static/js/main.8802e22b.js",
     "static/media/miller-time-preview-image.png": "/wes-mitchell-portfolio/static/media/miller-time-preview-image.17b085859b255c0693d5.png",
     "static/media/portfolio-image.png": "/wes-mitchell-portfolio/static/media/portfolio-image.3bf4affab80e2c37e0f8.png",
     "static/media/resume-page-one.png": "/wes-mitchell-portfolio/static/media/resume-page-one.c46e90779e5744c31db3.png",
@@ -10,11 +10,11 @@
     "static/media/drum-deals-preview.png": "/wes-mitchell-portfolio/static/media/drum-deals-preview.2478732e558c5eaa3079.png",
     "static/media/intro-bg.jpg": "/wes-mitchell-portfolio/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
     "index.html": "/wes-mitchell-portfolio/index.html",
-    "main.8b4db21b.css.map": "/wes-mitchell-portfolio/static/css/main.8b4db21b.css.map",
-    "main.dbb563db.js.map": "/wes-mitchell-portfolio/static/js/main.dbb563db.js.map"
+    "main.2911f8e0.css.map": "/wes-mitchell-portfolio/static/css/main.2911f8e0.css.map",
+    "main.8802e22b.js.map": "/wes-mitchell-portfolio/static/js/main.8802e22b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b4db21b.css",
-    "static/js/main.dbb563db.js"
+    "static/css/main.2911f8e0.css",
+    "static/js/main.8802e22b.js"
   ]
 }
