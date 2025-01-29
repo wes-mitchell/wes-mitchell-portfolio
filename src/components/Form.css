@@ -39,6 +39,21 @@ form textarea {
   border-radius: 4px;
 }
 
+button:disabled {
+  cursor: default;
+  background-color: transparent;
+  color: rgba(244, 244, 244, 0.3);
+  border: 1px solid #444;
+  pointer-events: none;
+}
+
+.required-asterisk {
+  color: red;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
 @media (max-width: 320px) {
   form {
     margin-left: 1rem;

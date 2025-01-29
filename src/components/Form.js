@@ -31,6 +31,12 @@ const ContactForm = () => {
     }));
   };
 
+  const buttonDisabled =
+    formData.email === '' ||
+    formData.message === '' ||
+    formData.name === '' ||
+    formData.subject === '';
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -39,29 +45,34 @@ const ContactForm = () => {
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const userId = process.env.REACT_APP_EMAILJS_USER_ID;
 
-    emailjs.send(serviceId, templateId, formData, userId).then(
-      (r) => {
-        setNotificationMessage({
-          message:
-            'Your message was sent successfully, I will be in touch with you soon!',
-          isError: false,
-        });
-        setFormData(formDataInitalValues);
-      },
-      (e) => {
-        setNotificationMessage({
-          message: 'There was an error sending the message. Please try again.',
-          isError: true,
-        });
-      }
-    );
-    setShowModal(true);
-    setLoading(false);
+    emailjs
+      .send(serviceId, templateId, formData, userId)
+      .then(
+        (r) => {
+          setNotificationMessage({
+            message:
+              'Your message was sent successfully, I will be in touch with you soon!',
+            isError: false,
+          });
+          setFormData(formDataInitalValues);
+        },
+        (e) => {
+          setNotificationMessage({
+            message:
+              'There was an error sending the message. Please try again.',
+            isError: true,
+          });
+        }
+      )
+      .finally(() => {
+        setLoading(false);
+        setShowModal(true);
+      });
   };
 
   return (
     <>
-      {showModal && (
+      {showModal && !loading && (
         <NotificationModal
           showModal={showModal}
           setShowModal={setShowModal}
@@ -73,7 +84,9 @@ const ContactForm = () => {
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">
+              Name: <span className="required-asterisk">*</span>
+            </label>
             <input
               type="text"
               id="name"
@@ -85,7 +98,9 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">
+              Email:<span className="required-asterisk">*</span>
+            </label>
             <input
               type="email"
               id="email"
@@ -97,7 +112,9 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="subject">Subject:</label>
+            <label htmlFor="subject">
+              Subject:<span className="required-asterisk">*</span>
+            </label>
             <input
               type="text"
               id="subject"
@@ -109,7 +126,9 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">
+              Message:<span className="required-asterisk">*</span>
+            </label>
             <textarea
               id="message"
               name="message"
@@ -122,7 +141,8 @@ const ContactForm = () => {
           <button
             type="submit"
             className="btn container-btn"
-            disabled={loading}
+            disabled={loading || buttonDisabled}
+            title={buttonDisabled ? 'Please fill out all required fields' : ''}
           >
             {loading ? 'Sending...' : 'Submit'}
           </button>
