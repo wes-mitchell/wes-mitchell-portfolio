@@ -4,16 +4,7 @@
 
 .project-heading {
   text-align: center;
-  padding: 4rem 0 2rem 0;
-}
-
-.project-container {
-  max-width: 1140px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-  padding-bottom: 5rem;
+  padding: 0 0 1.5rem 0;
 }
 
 .project-card {
@@ -47,12 +38,4 @@
 
 .show-more:hover {
   color: #0056b3;
-}
-
-@media screen and (max-width: 740px) {
-  .card-container {
-    max-width: 90%;
-    margin: auto;
-    grid-template-columns: 1fr;
-  }
 }

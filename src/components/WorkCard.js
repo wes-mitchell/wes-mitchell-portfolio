@@ -24,7 +24,13 @@ const WorkCard = ({ project }) => {
   };
 
   const renderLink = (url, buttonText) => {
-    return <ExternalLinkButton url={url} buttonText={buttonText} />;
+    return (
+      <ExternalLinkButton
+        url={url}
+        buttonText={buttonText}
+        className="container-btn"
+      />
+    );
   };
 
   return (

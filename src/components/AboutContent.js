@@ -19,6 +19,7 @@ const AboutContent = () => {
           <ExternalLinkButton
             url={AboutData.wmdrumsUrl}
             buttonText={'WMDRUMS'}
+            className="wmdrums-btn"
           />
         </span>
       </div>

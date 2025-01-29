@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Form.css';
+import NotificationModal from './NotificationModal';
 
 const ContactForm = () => {
   const formDataInitalValues = {
@@ -10,8 +11,17 @@ const ContactForm = () => {
     message: '',
   };
 
+  const notificationMessageInitialValues = {
+    message: '',
+    isError: false,
+  };
+
   const [formData, setFormData] = useState(formDataInitalValues);
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState(
+    notificationMessageInitialValues
+  );
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,72 +41,94 @@ const ContactForm = () => {
 
     emailjs.send(serviceId, templateId, formData, userId).then(
       (r) => {
+        setNotificationMessage({
+          message:
+            'Your message was sent successfully, I will be in touch with you soon!',
+          isError: false,
+        });
         setFormData(formDataInitalValues);
-        alert(
-          'Your message was sent successfully, I will be in touch with you soon!'
-        );
       },
       (e) => {
-        alert('There was an error sending the message. Please try again.');
+        setNotificationMessage({
+          message: 'There was an error sending the message. Please try again.',
+          isError: true,
+        });
       }
     );
-
+    setShowModal(true);
     setLoading(false);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
+    <>
+      {showModal && (
+        <NotificationModal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          notificationMessage={notificationMessage}
+          setNotificationMessage={setNotificationMessage}
         />
-      </div>
+      )}
 
-      <div className="form-group">
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-      <div className="form-group">
-        <label htmlFor="subject">Subject:</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          required
-        />
-      </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-      <div className="form-group">
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-      </div>
+          <div className="form-group">
+            <label htmlFor="subject">Subject:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-      <button type="submit" className="btn" disabled={loading}>
-        {loading ? 'Sending...' : 'Submit'}
-      </button>
-    </form>
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="btn container-btn"
+            disabled={loading}
+          >
+            {loading ? 'Sending...' : 'Submit'}
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

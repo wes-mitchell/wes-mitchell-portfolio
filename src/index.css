@@ -45,3 +45,27 @@ ul {
   color: #fff;
   transition: 0.3;
 }
+
+.btn.container-btn {
+  width: 100%;
+}
+
+.btn.modal-btn {
+  margin-right: 0;
+}
+
+.card-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+@media screen and (max-width: 740px) {
+  .card-container {
+    max-width: 1140px;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

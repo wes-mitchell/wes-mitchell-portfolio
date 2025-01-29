@@ -10,15 +10,22 @@ const ResumeContainer = () => {
   return (
     <div className="resume-container">
       <div className="resume-pages">
-        <div className="page">
-          <img src={PageOne} alt="Resume Page 1" />
-        </div>
-        <div className="page">
-          <img src={PageTwo} alt="Resume Page 2" />
-        </div>
+        {PageOne && PageTwo && (
+          <>
+            <div className="page">
+              <img src={PageOne} alt="Resume Page 1" />
+            </div>
+            <div className="page">
+              <img src={PageTwo} alt="Resume Page 2" />
+            </div>
+          </>
+        )}
       </div>
 
-      <button onClick={() => setShowModal(!showModal)} className="btn">
+      <button
+        onClick={() => setShowModal(!showModal)}
+        className="btn download-resume"
+      >
         Download Resume
       </button>
 

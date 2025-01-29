@@ -55,10 +55,6 @@
 }
 
 @media screen and (max-width: 1040px) {
-  .about .left {
-    margin-top: 10px;
-  }
-
   .about .right {
     margin-right: 0.5rem;
   }
@@ -71,5 +67,9 @@
   .btn-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .btn.wmdrums-btn {
+    margin-right: 0;
   }
 }
