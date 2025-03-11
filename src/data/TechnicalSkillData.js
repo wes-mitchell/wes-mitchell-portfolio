@@ -41,7 +41,7 @@ const TechnicalSkillData = {
     skills: [
       'Azure DevOps',
       'Azure Key Vault',
-      'Azure Blog Storage',
+      'Azure Blob Storage',
       'Git',
       'GitHub Actions',
       'CI/CD',
